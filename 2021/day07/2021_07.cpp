@@ -57,10 +57,11 @@ int calculate_difference_pt2(const std::vector<int>& crabs) {
     // if (((int)(avg * 10)) % 10 >= 5) {
     //     avg = avg + 1;
     // }
+    // int center = (int)avg;
     
     // due to rounding not working, we compare values of different centers (floor vs ceiling)
     // calculate fuel consumption
-    int center_floor = (int)avg / 1;
+    int center_floor = (int)avg;
     int center_ceiling = center_floor + 1;
     int fuel_floor = 0;
     int fuel_ceiling = 0;
